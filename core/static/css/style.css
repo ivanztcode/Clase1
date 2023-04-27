@@ -1,0 +1,47 @@
+/* --------------------------------
+#START CONFIGURATION
+------------------------*/
+html,
+body{
+    height: 100%;
+    margin: 0;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* -----------------------
+#FOOTER
+-----------------------*/
+
+nav{
+    background-color: #1b396a;
+}
+
+.navbar a{
+    color: #dddddd;
+}
+.navbar-nav .nav-link.active {
+    color: white;
+    font-weight: 500;
+}
+
+.wrapper{
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+/* acomodo el footer hasta abajo. */
+
+#footer,
+.push{
+    height: 50px;
+}
+
+/* -------------------------
+#NAVBAR
+----------------------------*/
+#btn-nav{
+    float: right;
+    margin-right: 25px;
+    color: #fff;
+    cursor: pointer;
+}   
