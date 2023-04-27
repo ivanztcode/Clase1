@@ -1,47 +1,45 @@
-/* --------------------------------
-#START CONFIGURATION
-------------------------*/
-html,
-body{
-    height: 100%;
-    margin: 0;
-    max-width: 100%;
-    overflow: hidden;
-}
-
 /* -----------------------
 #FOOTER
 -----------------------*/
 
-nav{
+nav {
     background-color: #1b396a;
-}
-
-.navbar a{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  .navbar a {
     color: #dddddd;
-}
-.navbar-nav .nav-link.active {
+  }
+  
+  .navbar-nav .nav-link.active {
     color: white;
     font-weight: 500;
-}
-
-.wrapper{
+  }
+  
+  .wrapper {
     min-height: 100%;
-    margin-bottom: -50px;
-}
-/* acomodo el footer hasta abajo. */
-
-#footer,
-.push{
+    margin-bottom: 50px; /* actualizado */
+  }
+  
+  /* acomodo el footer hasta abajo. */
+  
+  #footer,
+  .push {
     height: 50px;
-}
-
-/* -------------------------
-#NAVBAR
-----------------------------*/
-#btn-nav{
+  }
+  
+  
+  /* -------------------------
+  #NAVBAR
+  ----------------------------*/
+  
+  #btn-nav {
     float: right;
     margin-right: 25px;
     color: #fff;
     cursor: pointer;
-}   
+  }
+  

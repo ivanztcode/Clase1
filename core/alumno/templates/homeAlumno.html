@@ -7,10 +7,41 @@
     <div class="container mt-5">
         <h1 class="text-center" style="font-size: 20px;">Comandos importantes</h1>
         <ol>
-            <li>Hola</li>
+            <li>Necesitamos dirigirnos a las vistas de la aplicación alumno e importar: 
+                <strong>from .models import Alumno</strong>
+            </li>
+            <li>
+                En la función homeAlumno necesitamos llamar al modelo alumno y queremos obtener todos los objetos de dicho modelo con el siguiente comando:
+                <strong>    alumnos=Alumno.objects.all()
+                </strong>
+            </li>
+
+            <li>
+                Luego, se devuelve una respuesta HTTP utilizando la función "render" de Django, que renderiza la plantilla "homeAlumno.html" y pasa un diccionario de contexto que contiene la variable "alumnos", que es la lista de todos los objetos "Alumno" recuperados de la base de datos.                
+                <br>
+                <strong>    return render (request,"homeAlumno.html",{"alumnos":alumnos})</strong>
+            </li>
+
+           
+            
         </ol>
-        To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
-To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>
+        <h1 class="text-center" style="font-size: 20px;">Comandos importantes</h1>
+        <ol>
+            <li>Usamos el tag <strong>% if alumnos %,        % else %
+                % endif %</strong> para saber si hay alumnos en la lista.</li>
+            <li>Creamos una tabla simple con las siguientes etiquetas 
+
+                <ul>
+                    <li>table</li>
+                    <li>thead</li>
+                    <li>tr</li>
+                    <li>th</li>
+                    <li>td</li>
+                </ul>
+            </li>
+        </ol>
+        
+    Para guardar los cambios, presionamos <kbd><kbd>Ctrl</kbd> + <kbd>S</kbd></kbd>
     </div>
 
 {% endblock contenido %}
